@@ -22,7 +22,6 @@ app.get('/',function(req,res){
 
 // conectar ao banco
 mongoose.connect('mongodb+srv://batata:carequinha@primeiraapi.lmwkh.mongodb.net/myFirstDatabase?retryWrites=true&w=majority')
-// mongoose.connect('mongodb+srv://fiveminds:batata123@fiapteste.q4fkc.mongodb.net/myFirstDatabase?retryWrites=true&w=majority')
 // verificar se a conexão foi bem sucedida
 .then(
     ()=>{
