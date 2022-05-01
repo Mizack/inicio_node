@@ -3,11 +3,11 @@ var express = require("express")
 const app = express()
 
 app.get('/',function(req,res){
-    res.send('bem vido rapa')
+    res.sendFile(__dirname+"/templates/index.html")
 })
 app.get('/sobre',function(req,res){
-    // res.send('testando rotas')
-    res.sendFile("C:/Users/mizac/Documents/projeto_node/aula_4/index.html")
+    res.send('testando rotas')
+    // res.sendFile("C:/Users/mizac/Documents/projeto_node/aula_4/index.html")
 })
 // rotas dinamicas com parametros
 // sends são enviados uma unica vez
