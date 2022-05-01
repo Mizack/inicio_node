@@ -18,10 +18,9 @@ app.get('/',function(req,res){
     // vai retornar um json
     res.json({message:"opa"})
 })
-// mongodb+srv://batata:carequinha@primeiraapi.lmwkh.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
-
+// 
 // conectar ao banco
-mongoose.connect('mongodb+srv://batata:carequinha@primeiraapi.lmwkh.mongodb.net/myFirstDatabase?retryWrites=true&w=majority')
+mongoose.connect('mongodb+srv://user:pwd@primeiraapi.lmwkh.mongodb.net/myFirstDatabase?retryWrites=true&w=majority')
 // verificar se a conexão foi bem sucedida
 .then(
     ()=>{
